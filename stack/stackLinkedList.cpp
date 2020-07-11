@@ -4,7 +4,7 @@
 using namespace std;
 
 int size;
-int cunode;
+int cunode;         // Current node possition pointer
 
 class Node{
     public:
@@ -15,10 +15,12 @@ class Node{
 class Stack{
     Node *top;
     public:
-        // Stack initialisation
+
+        // Stack initialisation using constructor
         Stack(){
             top = NULL;
         }
+
         // Push method
         void push(){
             Node *t = new Node;
@@ -61,7 +63,7 @@ class Stack{
             while(ptr != NULL){
                 cout<<ptr->data;
                 ptr = ptr->next;
-                if(cnt == 1){cout<<"  <- Top"<<endl;}
+                if(cnt == 1){cout<<"  <- Top"<<endl;}   // logic to show top of the stack
                 else{cout<<endl;}
                 cnt--;
             }
