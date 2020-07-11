@@ -31,7 +31,7 @@ class Stack{
             else{
                 cout<<"Enter value in stack: ";
                 cin>>num;
-                t->data = x;
+                t->data = num;
                 t->next = top;
                 top = t;
                 cunode++;
