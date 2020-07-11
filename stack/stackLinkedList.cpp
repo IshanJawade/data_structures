@@ -24,7 +24,7 @@ class Stack{
             Node *t = new Node;
             int num;
             if (cunode == size){
-                cout<<"Stack Overflow";
+                cout<<"\nOperation failed ! \nerror: Stack Overflow"<<endl;
             }
             else{
                 cout<<"Enter value in stack: ";
@@ -33,6 +33,7 @@ class Stack{
                 t->next = top;
                 top = t;
                 cunode++;
+                cout<<"\n< "<<num<<" is sucsessfuly pushed into stack >"<<endl;
             }
         }
 
@@ -41,7 +42,7 @@ class Stack{
             Node *p;
             int x;
             if(top == NULL ||cunode == NULL || cunode == 0){
-                cout<<"Stack Underflow";
+                cout<<"\nOperation failed ! \nerror: Stack Underflow"<<endl;
             }
             else{
                 p = top;
@@ -86,7 +87,7 @@ int main(){
          } else if (ch == 4){
             break;
          } else {
-             cout<<"Invalid input. Please try again...";
+             cout<<"Invalid input. Please try again..."<<endl;
          }
      }
      return 0;
