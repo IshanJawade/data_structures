@@ -4,6 +4,23 @@
 # include <iostream>
 using namespace std;
 
+void Intro(){
+            system("clear");
+            cout<<"\t\tPair.Inc"<<endl;
+            cout<<"\n\nProgram Number: 01"<<endl<<"Program: Stack implementation using Array"<<endl<<"Coder: Ishan Jawade"<<endl;
+            cout<<"\n\n© Pair.Inc. All rights reserved. "<<endl;
+            cout<<"\nPress any key to continue...";
+            getchar();                    // wait for user input
+            system("clear");
+}
+
+void outro(){
+            cout<<"\n\n© Pair.Inc. All rights reserved.\nUnauthorised use of this product is strictly Prohibited.\n";
+            cout<<"\nPress any key to exit...";
+            getchar();
+            system("clear");
+}
+
  class impStack{
      public:
         int top = 0;
@@ -70,6 +87,7 @@ using namespace std;
  };
 
  int main(){    
+     Intro();
      impStack obj;
      int ch; 
      obj.createStack();
@@ -85,6 +103,7 @@ using namespace std;
          } else if (ch == 4){
             obj.emptyFull();
          } else if (ch == 5){
+             outro();
             break;
          } else {
              cout<<"Invalid input. Please try again...";
