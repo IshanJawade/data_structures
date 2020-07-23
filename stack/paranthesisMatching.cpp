@@ -31,7 +31,10 @@ void Check(string expression){
 }
 
 int main(){
-    string expression = "(((a+b)-(c-d)))";
+    //string expression = "(((a+b)-(c-d)))";
+    cout<<"Enter your expression:"<<endl;
+    string expression;
+    cin>>expression;
     Check(expression);
     return 0;
 }
