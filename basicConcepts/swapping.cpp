@@ -5,14 +5,12 @@ void mySwap(int &a, int &b){      // x and y are reffrence variables
     int temp = a;
     a = b;
     b = temp;
-    cout<<"1";
 }
 
 // void mySwap(int *a, int *b){      // x and y are pointer variables
 //     int temp = *a;                // you have to callby refrence in the main function
 //     *a = *b;
 //     *b = temp;
-//     cout<<"2";
 // }
 
 int main(){
