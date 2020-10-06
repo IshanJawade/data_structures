@@ -12,6 +12,6 @@ int num (int n){
 int main(){
     int a=5,r;
     r = num(a);
-    cout<<r;
+    cout<<r<<endl;
     return 0;
 }
