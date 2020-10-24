@@ -29,7 +29,7 @@ int main(){
 	
 	// Upper Bound and Lower bound in array 
 	vector<int> :: iterator it = lower_bound(v1.begin(), v1.end(), 100);    // "it" is pointer
-	//vector<int> :: iterator it2 = upper_bound(v1.begin(), v1.end(), 100);	// "it2" is pointer
+	// vector<int> :: iterator it2 = upper_bound(v1.begin(), v1.end(), 100);	// "it2" is pointer
 
 	cout<<*it<<" "; //<<*it2;
 
