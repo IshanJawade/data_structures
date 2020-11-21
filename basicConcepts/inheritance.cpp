@@ -48,3 +48,5 @@ int main(){
     sc.turbo();
     return 0;
 }
+
+// Designed by Ishan.✌🏻

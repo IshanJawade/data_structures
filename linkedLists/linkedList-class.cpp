@@ -1,4 +1,5 @@
 // Linked list application code using Class 
+// Add and Delete nides in the linjked list 
 
 # include <iostream>
 using namespace std;
