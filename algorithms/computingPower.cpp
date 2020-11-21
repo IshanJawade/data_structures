@@ -1,4 +1,5 @@
 // Program to find out Powers of Entered Number 
+// this solution will take (Theta n) time 
 
 # include <iostream>
 using namespace std;
