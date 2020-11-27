@@ -26,7 +26,30 @@ class arrayOps{
 			arr[idx]=ele;
 			return arrlen+1;
 		}
+		//Deletion
+			//1. Delete an element from an array
+			int deleteEle(int arr[], int ele, int arrlen){
+				for(int i=0; i<=arrlen-1; i++)
+					if(arr[i]==ele){
+						break;
+			
+				if (i==arrlen)
+					return arrlen;
 
+				for(int j=i; j<=arrlen-1; i++){
+					arr[i] = arr[i+1];
+				}
+				return arrlen-1;
+			}
+			//2. Delete an element from an array by its Possition
+			int deleteElePos(int arr[], int pos, int cap, int arrlen){
+				int ele = arr[pos-1];
+				int idx = pos-1;
+				for(int i=idx; i<=arrlen; i++){
+					arr[i] = arr[i+1];
+				}
+				return arrlen-1;
+			}
 };
 
 int main(){
@@ -48,5 +71,7 @@ int main(){
 	cout << "Enter the number to search from the array:";
 	cin >> num;
 	cout << obj.search(arr, arrlen, num) << endl;
+
+
 	return 0;
 }
