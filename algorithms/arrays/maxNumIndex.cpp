@@ -1,7 +1,7 @@
 # include <iostream>
 using namespace std;
 
-// My logic 
+// My logic (Breutforce Approach)
 int maxNumIndex(int arr[], int arrlen){
 	int maxNum=NULL, maxNumIn=0;
 	for(int i=0; i < arrlen-1; i++){
@@ -10,13 +10,10 @@ int maxNumIndex(int arr[], int arrlen){
 		}
 		if (arr[i] > maxNum){
 			maxNum = arr[i];
+			maxNumIn = i;
 		}
 	}
-	for (int i=0; i < arrlen-1; i++){
-		if (arr[i] == maxNum){
-			maxNumIn = i;
-		} 
-	}
+	
 	return maxNumIn;
 }
 
