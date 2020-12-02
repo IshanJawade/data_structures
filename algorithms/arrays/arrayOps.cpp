@@ -4,7 +4,7 @@ using namespace std;
 class arrayOps{
 	public:
 		// To search element in Array
-		int search(int arr[], int arrlen, int num ){		
+		int search(int arr[], int arrlen, int num ){	
 			string err = "Number not found!";
 			for (int i = 0; i <= arrlen; i++){
 				if ( arr[i] == num){
@@ -40,6 +40,7 @@ class arrayOps{
 					arr[i] = arr[i+1];
 				}
 				return arrlen-1;
+				}
 			}
 			//2. Delete an element from an array by its Possition
 			int deleteElePos(int arr[], int pos, int cap, int arrlen){
@@ -49,7 +50,7 @@ class arrayOps{
 					arr[i] = arr[i+1];
 				}
 				return arrlen-1;
-			}
+			}		
 };
 
 int main(){
@@ -71,7 +72,5 @@ int main(){
 	cout << "Enter the number to search from the array:";
 	cin >> num;
 	cout << obj.search(arr, arrlen, num) << endl;
-
-
 	return 0;
 }
