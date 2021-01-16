@@ -1,7 +1,7 @@
 # include <iostream>
 using namespace std;
 
-// My logic (Breutforce Approach)
+// My logic (Breutforce Approach) And Optimise also 
 int maxNumIndex(int arr[], int arrlen){
 	int maxNum=NULL, maxNumIn=0;
 	for(int i=0; i < arrlen-1; i++){

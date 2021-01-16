@@ -73,4 +73,3 @@ int main(){
 	cin >> num;
 	cout << obj.search(arr, arrlen, num) << endl;
 	return 0;
-}
