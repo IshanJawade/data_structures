@@ -6,26 +6,29 @@ using namespace std;
 class Car{
     public:
         void engine(){
-            cout<<"Engine ON\n";
+            cout<<"Car's Engine\n";
         }
         void chassis(){
-            cout<<"Chassis ON\n";
+            cout<<"Car's Chassis\n";
         }
         void body(){
-            cout<<"Body ON\n";
+            cout<<"Car's Body\n";
         }
 };
 
 class SportsCar: public Car{
     public:
         void turbo(){
-            cout<<"Turbo is ON\n";
+            cout<<"Sportscar's Turbo\n";
         }
-        void spoiler(){
-            cout<<"Spoiler is ON\n";
+        void spoiler() {
+            cout<<"Sportscar's Spoiler\n";
         }
         void rollcage(){
-            cout<<"Rollcage is ON\n";
+            cout<<"Sportscar's Rollcage\n";
+        }
+        void engine(){      //Overloaded function
+            cout<<"Sportscar's Engine"<<endl;
         }
 };
 
@@ -42,7 +45,8 @@ int main(){
     cout<<"\nSports Car Specs: \n";
     sc.body();      // inherited form Car class
     sc.chassis();   // inherited form Car class
-    sc.engine();    // inherited form Car class
+    sc.Car::engine();   //Accessed Car class from the object of Sportscar class OP Shit
+    sc.engine();
     sc.rollcage();
     sc.spoiler();
     sc.turbo();
