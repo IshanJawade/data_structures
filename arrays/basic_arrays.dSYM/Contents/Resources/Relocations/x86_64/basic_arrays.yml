@@ -1,0 +1,9 @@
+---
+triple:          'x86_64-apple-darwin'
+binary-path:     '/Users/ishan/Desktop/code/c++/data_structures/arrays/basic_arrays'
+relocations:
+  - { offset: 0x248C, size: 0x8, addend: 0x0, symName: __ZStL8__ioinit, symObjAddr: 0xEEF6, symBinAddr: 0x100002000, symSize: 0x0 }
+  - { offset: 0x2599, size: 0x8, addend: 0x0, symName: __GLOBAL__sub_I_basic_arrays.cpp, symObjAddr: 0x104, symBinAddr: 0x100000802, symSize: 0xB }
+  - { offset: 0x25B0, size: 0x8, addend: 0x0, symName: __Z41__static_initialization_and_destruction_0v, symObjAddr: 0xCE, symBinAddr: 0x1000007CC, symSize: 0x36 }
+  - { offset: 0x25CE, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x0, symBinAddr: 0x100000700, symSize: 0xCC }
+...
