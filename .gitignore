@@ -1,1 +1,8 @@
-*.out
+# Ignore everything
+*
+
+# But allow directories (so Git can traverse them)
+!*/
+
+# Allow only .cpp files
+!*.cpp
