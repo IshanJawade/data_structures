@@ -12,6 +12,7 @@ int main(){
     {
         cout << array[i] << " ";
     }
+    cout<<"\n";
     
     return 0;
 }
